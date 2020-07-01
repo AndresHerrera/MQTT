@@ -38,8 +38,19 @@ Publisher topic
 $ mosquitto_pub -h 127.0.0.1 -p 1883 -t "home/kitchen/principal" -m "{ status: 'on' }"
 ```
 
-Form Python
+### Python examples
 
+Dependencies installation
 ```bash
 $ pip install --user paho-mqtt
+```
+
+MQTT Client
+```bash
+$ python mqtt_client.py
+```
+
+MQTT Publisher
+```bash
+$ python mqtt_publisher.py
 ```
